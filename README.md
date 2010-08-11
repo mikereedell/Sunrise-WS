@@ -11,10 +11,10 @@ Description
 Dependencies
 ------------
 From the .gems file:
- - sinatra 1.0
- - RubySunrise 0.2
- - json 1.4.3
- - tzinfo 0.3.17
+- sinatra 1.0
+- RubySunrise 0.2
+- json 1.4.3
+- tzinfo 0.3.17
 
 
 Installation
@@ -30,20 +30,20 @@ Usage
 -----
 
 There are just a handful of services provided:
- - Get all sunrise/sunset data for today.
- - Get all sunrise/sunset data this year.
- - Get all sunrise/sunset data a specific date.
+- Get all sunrise/sunset data for today.
+- Get all sunrise/sunset data this year.
+- Get all sunrise/sunset data a specific date.
 
 And by all sunrise/sunset data, there are four types:
- - Official rise/set occurs when the sun is at 90deg, 50minutes.
- - Civil rise/set (commonly referred to as twilight) occurs when the sun is at 96deg (six degrees below the horizon).
- - Nautical rise/set occurs when the sun is at 102deg.
- - Astronomical rise/set occurs when the sun is at 108deg.
+- Official rise/set occurs when the sun is at 90deg, 50minutes.
+- Civil rise/set (commonly referred to as twilight) occurs when the sun is at 96deg (six degrees below the horizon).
+- Nautical rise/set occurs when the sun is at 102deg.
+- Astronomical rise/set occurs when the sun is at 108deg.
 
 All methods take a common set of parameters:
- - Latitude: Decimal representation of the locations latitude (+ when above the equator, - below).
- - Longitude: Decimal representation of the locations longitude (+ when east of the Prime Meridian, - when west).
- - Timezone will be in two parts, the first being the country/region and the second being the city, ie, "America/New_York".  See [http://tzinfo.rubyforge.org/svn/trunk/tzinfo/lib/tzinfo/indexes/timezones.rb](http://tzinfo.rubyforge.org/svn/trunk/tzinfo/lib/tzinfo/indexes/timezones.rb) for all available timezone identifiers in the tzinfo gem.
+- Latitude: Decimal representation of the locations latitude (+ when above the equator, - below).
+- Longitude: Decimal representation of the locations longitude (+ when east of the Prime Meridian, - when west).
+- Timezone will be in two parts, the first being the country/region and the second being the city, ie, "America/New_York".  See [http://tzinfo.rubyforge.org/svn/trunk/tzinfo/lib/tzinfo/indexes/timezones.rb](http://tzinfo.rubyforge.org/svn/trunk/tzinfo/lib/tzinfo/indexes/timezones.rb) for all available timezone identifiers in the tzinfo gem.
 
 
 ### Get todays sunrise/sunset data: ###
