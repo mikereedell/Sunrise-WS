@@ -1,11 +1,10 @@
 Sunrise-WS
 ==========
 
-Super simple Sinatra wrapper around the RubySunrise gem to provide sunrise/sunset data using JSON web-services.
-
 Description
 -----------
 
+Super simple Sinatra wrapper around the RubySunrise gem to provide sunrise/sunset data using JSON web-services.
 
 
 Dependencies
