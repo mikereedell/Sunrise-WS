@@ -7,7 +7,7 @@ get '/sunrise/today/:lat/:lng/:tz1/:tz2' do
   timezone = params[:tz1] + '/' + params[:tz2]
   events = events_map(Date.today, BigDecimal.new(params[:lat]), BigDecimal.new(params[:lng]), timezone)
 
-  "#{JSON.generate(date.to_s => events)}"
+  "#{JSON.generate(Date.today.to_s => events)}"
 end
 
 get '/sunrise/year/:lat/:lng/:tz1/:tz2' do
