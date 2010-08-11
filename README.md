@@ -26,7 +26,6 @@ Installation
 
 That's it!
 
-
 Usage
 -----
 
@@ -41,8 +40,13 @@ And by all sunrise/sunset data, there are four types:
  - Nautical rise/set occurs when the sun is at 102deg.
  - Astronomical rise/set occurs when the sun is at 108deg.
 
+All methods take a common set of parameters:
+ - Latitude: Decimal representation of the locations latitude (+ when above the equator, - below).
+ - Longitude: Decimal representation of the locations longitude (+ when east of the Prime Meridian, - when west).
+ - Timezone will be in two parts, the first being the country/region and the second being the city, ie, "America/New_York".  See [http://tzinfo.rubyforge.org/svn/trunk/tzinfo/lib/tzinfo/indexes/timezones.rb](http://tzinfo.rubyforge.org/svn/trunk/tzinfo/lib/tzinfo/indexes/timezones.rb) for all available timezone identifiers in the tzinfo gem.
 
-Get todays sunrise/sunset data:
+
+### Get todays sunrise/sunset data: ###
 
 Make a call to /sunrise/today/:lat/:lng/:tz1/:tz2 where you provide the latitude, longitude, and timezone.
 
