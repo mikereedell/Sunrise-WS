@@ -1,3 +1,4 @@
 sinatra --version 1.0
 RubySunrise --version 0.2
 json --version 1.4.3
+tzinfo --version 0.3.17
